@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    perspective: 10px;
+}
+.hero{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    transform-style: preserve-3d;
+    z-index: -5;
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateZ(-30px) scale(4.5);
+}
+.headingMain{
+    position: absolute;
+    border: 5px solid rgb(97, 231, 97);
+    border-radius: 30px;
+    color: White;
+    padding: 10px;
+    font-size: 3rem;
+}
+.intro{
+    height: 800px;
+    width: 100%;
+    background-image: url(./Images/second.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+    background-color: #222;
+    background-blend-mode: color-dodge;
+}
+.container{
+    background-color: rgba(17, 83, 17, 0.727);
+    color: whitesmoke;
+    padding: 5px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    font-size: 2.4rem;
+}
+.para{
+    font-size: 1.4rem;
+    line-height: 23px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+.importance{
+    height: 800px;
+    width: 100%;
+    background-image: url(./Images/third.jpg);
+
+    background-attachment: fixed;
+    background-size: cover;
+    
+    background-color: #222;
+    background-blend-mode: color-dodge;
+}
+.conserve{
+    height: 800px;
+    width: 100%;
+    background-image: url(./Images/fourth.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.conclusion{
+    height: 800px;
+    width: 100%;
+    background-image: url(./Images/fifth.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.end{
+    font-size: 1.4rem;
+    line-height: 23px;
+    background-color: rgba(8, 45, 73, 0.727);
+    color: whitesmoke;
+    padding: 15px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}

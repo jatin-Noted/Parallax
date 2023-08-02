@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'Kalam', cursive;
+
+    perspective: 10px;
+}
+.hero{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform-style: preserve-3d;
+    z-index: -3;
+}
+.back, .fore{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+.back{
+    transform: translateZ(-40px) scale(6);
+    z-index: -2;
+}
+.fore{
+    transform: translateZ(-20px) scale(3);
+    z-index: -1;
+}
+.heroHeading{
+    font-size: 12rem;
+    color: rgb(185, 151, 151);
+    letter-spacing: 24px;
+    text-shadow: o o 10px rgba(0, 0, 0, 0.3);
+}
+section{
+    background-color: gray;
+    color: whitesmoke;
+}
+.secHead{
+    font-size: 3rem;
+    text-align: center;
+    color: bisque;
+    padding: 1rem;
+}
+.para{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.bg1{
+    background-image: url(./Images/sport-1-cycling.jpg);
+}
+.bg2{
+    background-image: url(./Images/sport-2-paraGliding.jpg);
+}
+.bg3{
+    background-image: url(./Images/sport-3-surfing.jpg);
+}
+.bg4{
+    background-image: url(./Images/sport-4-hiking.jpg);
+}
+.bg5{
+    background-image: url(./Images/sport-5-rafting.jpg);
+}
+.bg{
+    position: relative;
+    width: 100%;
+    height: 700px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 3rem;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+    font-weight: 600;
+    background-color: white;
+    padding: 0.5rem;
+}
+.line{
+    width: 100%;
+    height: 5px;
+    background-color: aqua;
+}
+footer{
+    background-color: black;
+    color: whitesmoke;
+}
